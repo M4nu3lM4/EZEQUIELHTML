@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4b0000, #a00000);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid gold;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+/* NAV */
+nav {
+    background: #1a0000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    border-bottom: 2px solid gold;
+}
+
+nav a {
+    color: #fff;
+    margin: 8px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* CONTENIDO */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-left: 5px solid #a00000;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.card h2 {
+    color: gold;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* AUDIO */
+audio {
+    width: 100%;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px gold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #1a0000;
+    padding: 15px;
+    border-top: 2px solid gold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    header p { font-size: 16px; }
+    nav { flex-direction: column; }
+    nav a { margin: 10px 0; }
+}
